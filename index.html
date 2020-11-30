@@ -1,41 +1,78 @@
-<!-- versió d'html 5 -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>2gp 2020-2021</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Treballs RIA</title>
+    <style type="text/css">
+        /*reset*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /*fonts*/
+        body{
+            font-family: 'PT Sans', sans-serif;
+        }
+        
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            body {
+                background: grey;
+            }
+            .grid-container{
+                display: grid;
+                grid-template-areas: 
+                    'header' 'header'
+                    'nav' 'nav'
+                    'main' 'main'
+                    'footer' 'footer'
+                    ;
+                grid-gap: 40px;
+            }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            body {
+                background: blue;
+            }
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+            body {
+                background: pink;
+            }
+        }
+
+    </style>
 </head>
 
 <body>
-    <header>
-        <h1 >Recursos Interactius Aplicats</h1>
-        <h2>Blanca Gómez</h2>
-        <style type="text/css">
-            header,footer {
-                background: aqua;
-            }
-        </style>
+   <div class="grid-container">
+    <header class="header">
+        <h1>Recursos Interactius Aplicats a la gráfica publicitària</h1>
+        <h2>CFGS Gráfica Publicitària EASDAlcoi 20/21</h2>
+        <h3>Blanca Gómez Molina</h3>
     </header>
-    <main>
+    <nav class="nav">
+        <a href="">projectes</a>
+        <a href="">contacte</a>
+    </nav>
+    <main class="main">
         <section>
-            <h3>Projectes</h3>
-        </section>
-        <section>
-            <h3>Recursos</h3>
-            <ul>
-                <li><a href="https://www.freecodecamp.org/">Freecodecamp</a></li>
-                <li><a href="https://developer.mozilla.org/es/">mdn-mozilla web docs</a></li>
-
-            </ul>
+            <img src="img/Captura%20de%20pantalla%202020-10-27%20a%20las%208.20.32.png" alt="p0_llocweb">
+            <h4>p0_llocweb</h4>
         </section>
     </main>
-    <footer>
-        <ul>
-            <li><span style="background: red">ins</span>ta</li>
-            <li>twitter</li>
-        </ul>
+    <footer class="footer">
+        <a href="mailto:gomezmb@easdalcoi.es">e-mail</a>
+        <a href="http://www.instagram.com/blancagomez97">insta</a>
+        <a href="http://www.twitter.com/blancagm97">twitter</a>
     </footer>
+    </div>
 </body>
-
 </html>
